@@ -10,3 +10,36 @@ npm install -g truffle@5.4.29
 
 after install ganache from web:
 https://trufflesuite.com/ganache/
+
+start ganache and copy paste the port to de truffle-config.js, like thi:
+ development: {
+     host: "127.0.0.1",     // Localhost (default: none)
+     port: 7545,            // Standard Ethereum port (default: none)
+     network_id: "*",       // Any network (default: none)
+    },
+
+
+
+# via terminal
+
+# build
+command: truffle compile
+
+# migrate
+command: truffle migrate
+
+# truffle console
+command: truffle console
+
+# is mining
+web3.eth.isMining();
+
+let instance = await HelloWorld.deployed();
+
+let number = await instance.myNumber();
+number.toNUmber();
+
+await instance.setInt(10);
+
+number = await instance.myNumber();
+number.toNUmber();
