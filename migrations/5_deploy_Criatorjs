@@ -1,0 +1,6 @@
+const Criator = artifacts.require("Criator");
+
+module.exports = function (deployer) {
+  deployer.deploy(Criator);
+};
+
