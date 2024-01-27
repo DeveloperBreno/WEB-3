@@ -43,3 +43,7 @@ await instance.setInt(10);
 
 number = await instance.myNumber();
 number.toNUmber();
+
+
+## libs
+npm install --sabe web3
